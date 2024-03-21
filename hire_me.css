@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #ffcdf1, #ff584d);
+}
+p{
+    margin-top: 200px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.handshake{
+    
+    height: 150px;
+    animation-name: handshake;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 0.7s;
+    animation-direction:alternate-reverse ;
+}
+@keyframes handshake {
+    from{
+        scale: 1;
+    }
+    to{
+        scale: 1.2;
+    }
+}
