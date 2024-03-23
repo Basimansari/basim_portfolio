@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
- 
+
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: #3162E5;
   --primary-color-dark: #9333ea;
   --secondary-color: #009281;
   --text-dark: white;
   --text-light: white;
-  --extra-light: #faf5ff;
+  --extra-light: #232027;
   --max-width: 1200px;
 }
 
@@ -41,7 +44,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #121212;
+  background-color: #232027;
   overflow: hidden;
 }
 
@@ -51,7 +54,7 @@ nav .logo a {
   font-weight: 400;
   color: #7996e5;
   transition: 0.3s;
-  
+
 }
 
 nav .checkbox {
@@ -61,6 +64,7 @@ nav .checkbox {
 nav input {
   display: none;
 }
+
 nav .checkbox i {
   font-size: 2rem;
   color: var(--primary-color);
@@ -185,21 +189,52 @@ ul li a:hover {
   width: min(25rem, 90%);
   border-radius: 100%;
   animation-name: image_animation;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-delay: 0.1s;
-    animation-direction:alternate-reverse ;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 0.1s;
+  animation-direction: alternate-reverse;
 }
+
 @keyframes image_animation {
-  from{
-      scale: 1;
+  from {
+    scale: 1;
   }
-  to{
-      scale: 1.1;
+
+  to {
+    scale: 1.1;
   }
 }
-@media (width<600px) {
+
+.about_section{
+  background-color: #232027;
+  text-align: center;
+  border-top: 2px solid gray;
+  width: 100%;
+  height: 175vh;
+}
+
+.about_section img{
+  margin-top: 25vh;
+  width: min(10rem, 90%);
+}
+
+.about_content{
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+  margin-top: 5vh;
+}
+
+
+
+
+
+
+
+
+
+@media (width < 500px) {
   nav .checkbox {
     display: block;
   }
@@ -216,7 +251,7 @@ ul li a:hover {
     gap: 3rem;
   }
 
-  nav #check:checked ~ ul {
+  nav #check:checked~ul {
     left: 0;
   }
 
@@ -237,8 +272,8 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
-  .content{
+
+  .content {
     margin-top: -10px;
   }
 }
-
